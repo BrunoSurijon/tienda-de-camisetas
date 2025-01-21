@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="estilos.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Parcial 2- Programacion I- Bruno Surijon</h1>
+
+			<div class="contenedorBotonCarrito">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="icon-cart"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+					/>
+				</svg>
+				<div class="contarProductosCarrito">
+					<span id="contadorProductosCarrito">0</span>
+				</div>
+
+				<div class="contenedorProductosCarrito hidden-cart">
+					<div class="productoCarrito">
+						<div class="rowProducto">
+							<div class="infoProductoCarrito">
+								<span class="cantidadProductoCarrito">  </span>
+								<p class="tituloProductoCarrito">  </p>
+								<span class="precioProductoCarrito">  </span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+						
+                    <div class="totalCantidadCarrito">
+                        <h3>Total:</h3>
+                        <span class="totalPrecioCarrito">$ </span>
+                    </div>
+				</div>
+			</div>
+		</header>
+		<div class="categorias">
+		<p>Filtrar por <a class="categoria" href="#" id="1"> Camisetas </a> <a class="categoria" href="#" id="2"> Buzos </a>  <a class="categoria" href="#" id="3"> Shorts </a> <a class="categoria" href="#" id="4"> Todos los productos </a></p>
+		</div>
+
+
+		<div class="contenedorProductos">
+			<div class="producto" id="1">
+				<figure>
+					<img
+						src="Imagenes/Camiseta River.jpg"
+						alt="Camiseta River"
+					/>
+				</figure>
+				<div class="infoProducto">
+					<h2>Camiseta River</h2>
+					<p class="descripcionProducto">Camiseta oficial adidas River Plate edicion 2023</p>
+					<p class="categoriaProducto">Categoria: Camisetas </p>
+					<p class="precioProducto">$ 45000</p>
+					<button class="botonAgregarAlCarrito">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="producto" id="2">
+				<figure>
+					<img
+						src="Imagenes/Buzo boca jrs.jpg"
+						alt="Buzo Boca Jrs"
+					/>
+				</figure>
+				<div class="infoProducto">
+					<h2>Buzo Boca Jrs</h2>
+					<p class="descripcionProducto">Buzo azul Boca jrs Adidas edicion 2019</p>
+					<p class="categoriaProducto">Categoria: Buzos</p>
+					<p class="precioProducto">$ 19000</p>
+					<button class="botonAgregarAlCarrito">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="producto" id="3">
+				<figure>
+					<img
+						src="Imagenes/Short retro Maradona.jpg"
+						alt="Short Maradona"
+					/>
+				</figure>
+				<div class="infoProducto">
+					<h2>Short Diego Maradona</h2>
+					<p class="descripcionProducto">Short retro Maradona edicion 1986 Argentina</p>
+					<p class="categoriaProducto">Categoria: Shorts</p>
+					<p class="precioProducto">$ 23000</p>
+					<button class="botonAgregarAlCarrito">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="producto" id="4">
+				<figure>
+					<img
+						src="Imagenes/Camiseta Seleccion Argentina.jpg"
+						alt="Camiseta Argentina"
+					/>
+				</figure>
+				<div class="infoProducto">
+					<h2>Camiseta Seleccion Argentina</h2>
+					<p class="descripcionProducto">Camiseta Argentina Adidas mundial Qatar 2022</p>
+					<p class="categoriaProducto">Categoria: Camisetas</p>
+					<p class="precioProducto">$ 49000</p>
+					<button class="botonAgregarAlCarrito">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="producto" id="5">
+				<figure>
+					<img
+						src="Imagenes/Buzo Retro Napoli.jpg"
+						alt="Buzo retro Napoli"
+					/>
+				</figure>
+				<div class="infoProducto">
+					<h2>Buzo Retro Napoli</h2>
+					<p class="descripcionProducto">Buzo polar retro Napoli edicion 1989</p>
+					<p class="categoriaProducto">Categoria: Buzos</p>
+					<p class="precioProducto">$13500</p>
+					<button class="botonAgregarAlCarrito">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="producto" id="6">
+				<figure>
+					<img
+						src="Imagenes/Short newells.jpg"
+						alt="Short Newells"
+					/>
+				</figure>
+				<div class="infoProducto">
+					<h2>Short Newells Adidas</h2>
+					<p class="descripcionProducto">Short Newells adidas negro y rojo edicion actual</p>
+					<p class="categoriaProducto">Categoria : Shorts</p>
+					<p class="precioProducto">$6500</p>
+					<button class="botonAgregarAlCarrito">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+
+        <script src="parcial.js"></script>
+	</body>
+</html>
